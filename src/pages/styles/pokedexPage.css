@@ -1,0 +1,97 @@
+.pokedex {
+    padding-bottom: 25px;
+    background-color:  rgb(239, 232, 232);
+}
+
+.poke_subtitle {
+    color: gray;
+    font-weight: 400;
+    font-size: medium;
+}
+.poke_span {
+    color: #F36127;
+    font-weight: 600;
+    font-size:larger;
+
+}
+
+.poke_form {
+ 
+    height: 2em;
+    width: 80%;
+    margin: 0 auto;
+    align-items:end;
+    display: flex;
+    box-shadow: -5px 5px 5px 0px rgba(124,105,105,0.59);
+    -webkit-box-shadow: -5px 5px 5px 0px rgba(124,105,105,0.59);
+    -moz-box-shadow: -5px 5px 5px 0px rgba(124,105,105,0.59);
+}
+
+.poke_input {
+    
+    height:inherit;
+    width: 70%;
+    text-align: center;
+    
+}
+
+.poke_header {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    gap: 10px;
+}
+
+.poke_btn {
+    height: inherit;
+    width: 30%;
+    background-color: orange;
+    color: rgba(255, 255, 255, 0.737);
+    font-weight: 500;
+    font-size:smaller
+ 
+}
+.poke_header h3 {
+    text-align: center;
+}
+
+.poke_header div {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.poke_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    /* Estilos para tablets y dispositivos de mayor tamaño */
+    /* Puedes agregar aquí tus estilos específicos para tablets y computadoras */
+    .poke_container_form {
+  
+        display: flex;
+        justify-content: space-between;
+        height: 2em;
+    }
+
+    .poke_form {
+        margin: 0;
+        padding: 0;
+        
+        width: 50%;
+        height: inherit;
+    }
+
+  }
+  

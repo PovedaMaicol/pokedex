@@ -1,0 +1,329 @@
+.poke_card {
+    background-color: white;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    cursor: pointer;
+    gap: 5px;
+    position: relative;
+    color: gray;
+
+}
+
+.poke_card:hover {
+    transform: scale(1.05);
+}
+
+.poke_img {
+    margin-top: 1em;
+    
+    
+}
+
+.poke_card div {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    border-radius: 0px 0px 0 0;
+}
+.poke_card figure {
+    position: relative;
+    width: 150px;
+    z-index: 10;
+}
+
+.poke_types {
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    justify-content: space-around;
+    
+
+}
+
+.poke_p {
+    font-size: small;
+}
+.poke_type {
+    font-weight: 500;
+
+}
+
+.poke_card hr {
+    width: 85%;
+}
+
+.poke_li {
+    font-size:x-small;
+    text-align: left;
+    
+
+}
+
+.poke_stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+    width: 85%;
+    gap: 10px;
+}
+
+.poke_stats li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .slot2::before {
+    content: '/';
+} */
+
+
+
+
+
+
+
+
+/* --- colores de fondo dinamicos para las cards --- */
+
+.grass {
+    background: rgb(192,222,168);
+    background: linear-gradient(0deg, rgba(192,222,168,1) 23%, rgba(139,202,195,1) 91%);
+}
+.spangrass,
+.namegrass {
+    color:  rgb(139,202,195,1);
+}
+.cardgrass {
+    border: 7px solid rgb(139,202,195,1) ;
+}
+
+
+
+.fire {
+    background: rgb(230,141,31);
+    background: linear-gradient(0deg, rgba(230,141,31,1) 23%, rgba(231,92,51,1) 91%);
+}
+.namefire, 
+.spanfire {
+    color: rgba(231,92,51,1);
+}
+.cardfire {
+    border: 7px solid  rgba(231,92,51,1);
+}
+
+
+
+.water {
+    background: rgb(43,133,249);
+    background: linear-gradient(0deg, rgba(43,133,249,1) 23%, rgba(20,93,188,1) 91%);
+}
+.namewater,
+.spanwater {
+    color: rgba(20,93,188,1);
+}
+.cardwater {
+    border: 7px solid rgba(20,93,188,1) ;
+}
+
+
+.bug {
+    background: rgb(147,206,127);
+    background: linear-gradient(0deg, rgba(147,206,127,1) 23%, rgba(64,181,61,1) 91%);
+}
+.namebug,
+.spanbug {
+    color: rgba(64,181,61,1);
+}
+.cardbug {
+    border: 7px solid rgba(64,181,61,1);
+}
+
+
+.poison {
+    background: rgb(179,119,237);
+    background: linear-gradient(0deg, rgba(179,119,237,1) 23%, rgba(105,59,150,1) 91%);
+}
+.namepoison,
+.spanpoison {
+    color: rgba(105,59,150,1);
+}
+.cardpoison {
+    border: 7px solid rgba(105,59,150,1);
+}
+
+
+
+.normal {
+    background: rgb(171,101,116);
+    background: linear-gradient(0deg, rgba(171,101,116,1) 23%, rgba(121,84,92,1) 91%);
+}
+.namenormal,
+.spannormal {
+    color: rgba(121,84,92,1);
+}
+.cardnormal {
+    border: 7px solid rgba(121,84,92,1);
+}
+
+
+
+.electric {
+    background: rgb(244,237,127);
+    background: linear-gradient(0deg, rgba(244,237,127,1) 23%, rgba(248,158,54,1) 91%);
+}
+.nameelectric,
+.spanelectric {
+    color: rgba(248,158,54,1);
+}
+.cardelectric {
+    border: 7px solid rgba(248,158,54,1);
+}
+
+
+
+.ground {
+    background: rgb(182,126,43);
+    background: linear-gradient(0deg, rgba(182,126,43,1) 23%, rgba(114,73,11,1) 91%);
+}
+.nameground, 
+.spanground {
+    color: rgba(114,73,11,1);
+}
+.cardground {
+    border: 7px solid rgba(114,73,11,1);
+}
+
+
+
+.rock {
+    background: rgb(165,165,165);
+    background: linear-gradient(0deg, rgba(165,165,165,1) 23%, rgba(131,132,134,1) 91%);
+}
+.namerock,
+.spanrock {
+    color: rgba(131,132,134,1);
+}
+.cardrock {
+    border: 7px solid rgba(131,132,134,1);
+}
+
+
+
+
+.fighting {
+    background: rgb(199,82,52);
+    background: linear-gradient(0deg, rgba(199,82,52,1) 23%, rgba(157,67,44,1) 91%);
+}
+.namefighting,
+.spanfighting {
+    color: rgba(157,67,44,1);
+}
+.cardfighting {
+    border: 7px solid rgba(157,67,44,1);
+}
+
+
+.ghost {
+    background: rgb(114,118,200);
+    background: linear-gradient(0deg, rgba(114,118,200,1) 23%, rgba(55,59,122,1) 91%);
+}
+.nameghost, 
+.spanghost {
+color: rgba(55,59,122,1);
+}
+.cardghost {
+    border: 7px solid rgba(55,59,122,1);
+}
+
+
+
+.steel {
+    background: rgb(145,154,151);
+    background: linear-gradient(0deg, rgba(145,154,151,1) 23%, rgba(103,124,117,1) 91%);
+}
+.namesteel,
+.spansteel {
+    color: rgba(103,124,117,1);
+}
+.cardsteel {
+    border: 7px solid rgba(103,124,117,1);
+}
+
+
+.psychic {
+    background: rgb(133,77,125);
+    background: linear-gradient(0deg, rgba(133,77,125,1) 23%, rgba(49,7,82,1) 91%);
+}
+.namepsychic,
+.spanpsychic {
+    color: rgba(49,7,82,1);
+}
+.cardpsychic {
+    border: 7px solid rgba(49,7,82,1);
+}
+
+
+
+.ice {
+    background: rgb(147,220,250);
+    background: linear-gradient(0deg, rgba(147,220,250,1) 23%, rgba(108,194,230,1) 91%);
+}
+.nameice,
+.spanice {
+    color: rgba(108,194,230,1);
+}
+.cardice {
+    border: 7px solid rgba(108,194,230,1);
+}
+
+
+
+.dragon {
+    background: rgb(146,189,193);
+    background: linear-gradient(0deg, rgba(146,189,193,1) 23%, rgba(77,148,157,1) 91%);
+}
+.namedragon,
+.spandragon {
+    color: rgba(77,148,157,1);
+}
+.carddragon {
+    border: 7px solid rgba(77,148,157,1);
+}
+
+
+
+
+.dark {
+    background: rgb(11,14,77);
+    background: linear-gradient(0deg, rgba(11,14,77,1) 23%, rgba(0,0,0,1) 91%);
+}
+.namedark,
+.spandark {
+    color: rgba(11,14,77,1);
+}
+.carddark {
+    border: 7px solid rgba(11,14,77,1);
+}
+
+
+
+
+.fairy {
+    background: rgb(207,116,147);
+    background: linear-gradient(0deg, rgba(207,116,147,1) 23%, rgba(166,37,80,1) 91%);
+   
+}
+.namefairy,
+.spanfairy {
+    color: rgba(166,37,80,1);
+}
+.cardfairy {
+    border: 7px solid rgba(166,37,80,1);
+}
+
+

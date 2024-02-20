@@ -1,0 +1,404 @@
+.bx-x-circle {
+    color: white;
+    font-size: 30px;
+    font-weight:200;
+    position: absolute;
+    right: 0;
+    float: left;
+}
+
+.bx-x-circle:hover {
+color: black;
+}
+.id_card {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5em;
+    cursor: pointer;
+    gap: 5px;
+    position: relative;
+    color: gray;
+    border: 7px solid;
+
+
+}
+
+.id_card div {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    border-radius: 0px 0px 0 0;
+}
+
+.id_card figure {
+      z-index: 10;
+      width: 200px;
+    
+}
+
+.id_card_measures {
+    display: flex;
+    gap: 1em;
+    text-align: center;
+}
+
+.poke_number {
+    border: 0.2px solid rgba(128, 128, 128, 0.418);
+    padding: 2px 8px;
+    border-radius: 2px;
+}
+
+.hability_types {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+ 
+    gap: 1em;
+    width: 80%;
+    height: auto;
+
+    padding: 0;
+}
+
+.hability_types h3 {
+    padding-bottom: 0.5em;
+}
+
+.habilities,
+.types{
+    text-align: center;
+  
+}
+
+.types_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.type_li,
+.habiliti_li {
+    border:  0.2px solid rgba(128, 128, 128, 0.418);
+    padding: 5px 20px;
+}
+
+
+.measures_li {
+    font-size:small;
+}
+
+.measures_li span {
+    font-size:medium;
+    color: inherit;
+    font-weight: 500;
+}
+
+
+.habilities_ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.5em;
+ 
+}
+
+
+
+.stats {
+    width: 80%;
+}
+.stats_subtitle {
+    font-size:small;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+
+
+.stats_ul {
+    display: flex;
+    flex-direction: column;
+    ;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+display: flex;
+}
+
+.stat_li_container {
+    border: 1px solid gray;
+    height: 1.5em;
+}
+
+
+.poke_stat_li {
+   height: inherit;
+   
+}
+
+
+
+
+/* --- reset colores --- */
+
+.grass {
+    background: rgb(192,222,168);
+    background: linear-gradient(0deg, rgba(192,222,168,1) 23%, rgba(139,202,195,1) 91%);
+}
+.typegrass {
+    background-color: rgba(139,202,195,1);
+    color: white;
+}
+.cardgrass {
+    border: 7px solid rgba(139,202,195,1);
+}
+
+
+.fire {
+    background: rgb(230,141,31);
+    background: linear-gradient(0deg, rgba(230,141,31,1) 23%, rgba(231,92,51,1) 91%);
+}
+.typefire {
+    background-color: rgba(231,92,51,1);
+    color: white;
+}
+.cardfire {
+    border: 7px solid rgba(231,92,51,1);
+}
+
+
+.water {
+    background: rgb(43,133,249);
+    background: linear-gradient(0deg, rgba(43,133,249,1) 23%, rgba(20,93,188,1) 91%);
+}
+.typewater {
+    background-color: rgba(20,93,188,1);
+    color: white;
+}
+.cardwater {
+    border: 7px solid rgba(20,93,188,1);
+}
+
+
+
+.bug {
+    background: rgb(147,206,127);
+    background: linear-gradient(0deg, rgba(147,206,127,1) 23%, rgba(64,181,61,1) 91%);
+}
+.typebug {
+    background-color: rgba(64,181,61,1);
+    color: white;
+}
+.cardbug {
+    border: 7px solid rgba(64,181,61,1);
+}
+
+
+.poison {
+    background: rgb(179,119,237);
+    background: linear-gradient(0deg, rgba(179,119,237,1) 23%, rgba(105,59,150,1) 91%);
+}
+.typepoison {
+    background-color: rgba(105,59,150,1);
+    color: white;
+}
+.cardpoison {
+    border: 7px solid rgba(105,59,150,1);
+}
+
+
+.normal {
+    background: rgb(171,101,116);
+    background: linear-gradient(0deg, rgba(171,101,116,1) 23%, rgba(121,84,92,1) 91%);
+}
+.typenormal {
+    background-color: rgba(121,84,92,1);
+    color: white;
+}
+.cardnormal {
+    border: 7px solid rgba(121,84,92,1);
+}
+
+
+.electric {
+    background: rgb(244,237,127);
+    background: linear-gradient(0deg, rgba(244,237,127,1) 23%, rgba(248,158,54,1) 91%);
+}
+.typeelectric {
+    background-color: rgba(248,158,54,1);
+    color: white;
+}
+.cardelectric {
+    border: 7px solid rgba(248,158,54,1);
+}
+
+
+
+.ground {
+    background: rgb(182,126,43);
+    background: linear-gradient(0deg, rgba(182,126,43,1) 23%, rgba(114,73,11,1) 91%);
+}
+.typeground {
+    background-color: rgba(114,73,11,1);
+    color: white;
+}
+.cardground {
+    border: 7px solid rgba(114,73,11,1);
+}
+
+
+
+.rock {
+    background: rgb(165,165,165);
+    background: linear-gradient(0deg, rgba(165,165,165,1) 23%, rgba(131,132,134,1) 91%);
+}
+.typerock {
+    background-color: rgba(131,132,134,1);
+    color: white;
+}
+.cardrock {
+    border: 7px solid rgba(131,132,134,1);
+}
+
+
+
+.fighting {
+    background: rgb(199,82,52);
+    background: linear-gradient(0deg, rgba(199,82,52,1) 23%, rgba(157,67,44,1) 91%);
+}
+.typefighting {
+    background-color: rgba(157,67,44,1);
+    color: white;
+}
+.cardfighting {
+    border: 7px solid rgba(157,67,44,1);
+}
+
+
+
+
+.ghost {
+    background: rgb(114,118,200);
+    background: linear-gradient(0deg, rgba(114,118,200,1) 23%, rgba(55,59,122,1) 91%);
+}
+.typeghost {
+    background-color: rgba(55,59,122,1);
+    color: white;
+}
+.cardghost {
+    border: 7px solid rgba(55,59,122,1);
+}
+
+
+
+.steel {
+    background: rgb(145,154,151);
+    background: linear-gradient(0deg, rgba(145,154,151,1) 23%, rgba(103,124,117,1) 91%);
+}
+.typesteel {
+    background-color: rgba(103,124,117,1);
+    color: white;
+}
+.cardsteel {
+    border: 7px solid rgba(103,124,117,1);
+}
+
+
+.psychic {
+    background: rgb(133,77,125);
+    background: linear-gradient(0deg, rgba(133,77,125,1) 23%, rgba(49,7,82,1) 91%);
+}
+.typepsychic {
+    background-color: rgba(49,7,82,1);
+    color: white;
+}
+.cardpsychic {
+    border: 7px solid rgba(49,7,82,1);
+}
+
+
+.ice {
+    background: rgb(147,220,250);
+    background: linear-gradient(0deg, rgba(147,220,250,1) 23%, rgba(108,194,230,1) 91%);
+}
+.typeice {
+    background-color: rgba(108,194,230,1);
+    color: white;
+}
+.cardice {
+    border: 7px solid rgba(108,194,230,1);
+}
+
+
+
+
+.dragon {
+    background: rgb(146,189,193);
+    background: linear-gradient(0deg, rgba(146,189,193,1) 23%, rgba(77,148,157,1) 91%);
+}
+.typedragon {
+    background-color: rgba(77,148,157,1);
+    color: white;
+}
+.carddragon {
+    border: 7px solid  rgba(77,148,157,1);
+}
+
+
+
+.dark {
+    background: rgb(11,14,77);
+    background: linear-gradient(0deg, rgba(11,14,77,1) 23%, rgba(0,0,0,1) 91%);
+}
+.typedark {
+    background-color:  rgba(11,14,77,1);
+    color: white;
+}
+.carddark {
+    border: 7px solid rgba(11,14,77,1);
+}
+
+
+
+.fairy {
+    background: rgb(207,116,147);
+    background: linear-gradient(0deg, rgba(207,116,147,1) 23%, rgba(166,37,80,1) 91%);
+   
+}
+.typefairy {
+    background-color: rgba(166,37,80,1);
+    color:white;
+}
+.cardfairy {
+    border: 7px solid rgba(166,37,80,1);
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px){
+    .types_ul {
+        flex-direction: row;
+      justify-content: space-between;
+    }
+    .type_li {
+        width: 48%;
+    }
+    .habilities_ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .habiliti_li {
+        width: 48%;
+    }
+}

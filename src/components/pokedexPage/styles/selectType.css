@@ -1,0 +1,39 @@
+.select_type{
+    
+}
+    
+
+select {
+
+    height: 1.5em;
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    color: gray;
+    background-color: none;
+
+    font-size: small;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    /* Estilos para tablets y dispositivos de mayor tamaño */
+    /* Puedes agregar aquí tus estilos específicos para tablets y computadoras */
+
+    .select_type {
+        width: 20%;
+        margin: 0;
+        padding: 0;
+    }
+
+    select {
+        height: inherit;
+        box-shadow: -5px 5px 5px 0px rgba(124,105,105,0.59);
+        -webkit-box-shadow: -5px 5px 5px 0px rgba(124,105,105,0.59);
+        -moz-box-shadow: -5px 5px 5px 0px rgba(124,105,105,0.59);
+    
+
+    }
+  }
+  
