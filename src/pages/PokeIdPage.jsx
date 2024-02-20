@@ -26,8 +26,9 @@ const PokeIdPage = () => {
   
 
   return (
- <>
+<>
 <Header/>
+<div className='card_id_container'>
     <article className={`id_card card${pokeData?.types[0].type.name}`}>
     <div className={pokeData?.types[0].type.name}></div>
       <figure>
@@ -112,6 +113,7 @@ const PokeIdPage = () => {
 
 
     </article>
+    </div>
     </>
   )
 }
