@@ -26,8 +26,8 @@ const PokeIdPage = () => {
   
 
   return (
- 
-
+ <>
+<Header/>
     <article className={`id_card card${pokeData?.types[0].type.name}`}>
     <div className={pokeData?.types[0].type.name}></div>
       <figure>
@@ -81,7 +81,7 @@ const PokeIdPage = () => {
       
   
       </section>
-      <hr/>
+
 
 <section className='stats'>
   <h3>Stats<span><hr/></span></h3>
@@ -112,7 +112,7 @@ const PokeIdPage = () => {
 
 
     </article>
-
+    </>
   )
 }
 

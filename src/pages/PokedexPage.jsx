@@ -61,7 +61,7 @@ const PokedexPage = () => {
     const quantity = 5;
     const second = currentPage * quantity;
     const first = second - quantity;
-    const totalPages = pokemons && Math.floor(pokemons.results.length / quantity) + 1;
+    const totalPages = pokemons && Math.floor(pokemons.results.length / quantity);
     const residentParts = pokemons && pokemons.results.slice(first, second)
 
   return (

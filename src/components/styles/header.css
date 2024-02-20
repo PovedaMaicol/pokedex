@@ -20,6 +20,9 @@ header{
     /* Puedes agregar aquí tus estilos específicos para tablets y computadoras */
     header {
         height: 80px;
+        box-shadow: 0px 5px 34px 0px rgba(0,0,0,0.32);
+        -webkit-box-shadow: 0px 5px 34px 0px rgba(0,0,0,0.32);
+        -moz-box-shadow: 0px 5px 34px 0px rgba(0,0,0,0.32);
 
     }
     .header_img {
