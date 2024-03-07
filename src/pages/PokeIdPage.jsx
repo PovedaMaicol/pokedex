@@ -103,7 +103,7 @@ const PokeIdPage = () => {
               </ul>
             ))  
           }
-        
+        <br/>
       </section>
 <hr/>
     
