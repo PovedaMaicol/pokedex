@@ -23,7 +23,7 @@ const PokedexPage = () => {
 
     useEffect(() => {
         if (selectValue==='allPokemons') {
-            const url =  'https://pokeapi.co/api/v2/pokemon/?limit=30';
+            const url =  'https://pokeapi.co/api/v2/pokemon/?limit=1302';
             getPokemons(url);
         } else {
             getPerType(selectValue);
@@ -36,6 +36,7 @@ const PokedexPage = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         dispatch(setPokemonName(textInput.current.value.trim().toLowerCase()));
+        console.log(textInput.current.value)
         textInput.current.value = '';
     }
 
@@ -43,8 +44,12 @@ const PokedexPage = () => {
 
     const cbFilter = () => {
         if (pokemonName) {
-          
-            return residentParts.filter(element => element.name.includes(pokemonName));
+          console.log("pokemonName es", pokemonName)
+          console.log("pokemons es", pokemons)
+          console.log("residentParts es", residentParts)
+          console.log("pokemones son", pokemons?.results.filter(element => element.name.includes(pokemonName)))
+          return pokemons?.results.filter(element => element.name.includes(pokemonName));
+            // return residentParts.filter(element => element.name.includes(pokemonName));
         } else {
           
             return residentParts;
@@ -62,7 +67,7 @@ const PokedexPage = () => {
     const second = currentPage * quantity;
     const first = second - quantity;
     const totalPages = pokemons && Math.floor(pokemons.results.length / quantity);
-    const residentParts = pokemons && pokemons.results.slice(first, second)
+    const residentParts = pokemons && pokemons?.results.slice(first, second)
 
   return (
     

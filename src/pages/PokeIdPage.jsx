@@ -13,7 +13,7 @@ const PokeIdPage = () => {
   const param =  useParams();
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate(`/pokedex/`)
+    navigate(`/pokedex`)
   }
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const PokeIdPage = () => {
     <article className={`id_card card${pokeData?.types[0].type.name}`}>
     <div className={pokeData?.types[0].type.name}></div>
       <figure>
-      <i class='bx bx-x-circle' onClick={handleClick}></i>
+      <i className='bx bx-x-circle' onClick={handleClick}></i>
       <img src={pokeData?.sprites.other['official-artwork'].front_default} alt='pokemon photo' />
       </figure>
       
@@ -91,14 +91,14 @@ const PokeIdPage = () => {
             pokeData?.stats.map(stat => (
               !stat.stat.name.includes('special') &&
              
-  <ul className='stats_ul'>
+  <ul key={stat.stat.url} className='stats_ul'>
     <section className='stats_subtitle'>
     <h5 className='stat_name'>{stat.stat.name}</h5>
     <h5 className='stat_name'>{stat?.base_stat}/150</h5>
     </section>
     
               <li className='stat_li_container'>
-                <li key={stat.stat.url} className={`poke_stat_li ${pokeData?.types[0].type.name}`} style={{width: `${stat?.base_stat}%`}}></li>
+                <li className={`poke_stat_li ${pokeData?.types[0].type.name}`} style={{width: `${stat?.base_stat}%`}}></li>
               </li>
               </ul>
             ))  
